@@ -1,65 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kevin Ku</title>
 
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/pure.css">
-    <!--[if lte IE 8]>
-        <link rel="stylesheet" href="vendor/pur/css/layouts/side-menu-old-ie.css">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="vendor/pure/css/layouts/side-menu.css">
-    <!--<![endif]-->
   </head>
 
-  <body>
-    <div id="layout">
-      <!-- Menu toggle -->
-      <a href="#menu" id="menuLink" class="menu-link">
-        <!-- Hamburger icon -->
-        <span></span>
-      </a>
-
-      <div id="menu">
-        <div class="pure-menu pure-menu-open">
-          <a class="pure-menu-heading" href="#">Index</a>
-          <ul>
-            <li class="menu-item-divided pure-menu-selected">
-              <a href="#">Home</a>
-            </li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Get in Touch</a></li>
-          </ul>
+  <body style="padding-top: 50px;">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Kevin Ku</a>
         </div>
-      </div>
-
-      <div id="main">
-        <div class="header">
-          <h1>Kevin Ku</h1>
-          <h2>CS Undergrad at Carnegie Mellon University</h2>
-        </div>
-
-        <div class="content">
-          <h2 class="content-subhead">About Me</h2>
-          <p>
-          </p>
-
-          <h2 class="content-subhead">Projects</h2>
-          <p>
-          </p>
-
-          <h2 class="content-subhead">Get in Touch</h2>
-          <p>
-          </p>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about_me">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#get_in_touch">Get in Touch</a></li>
         </div>
       </div>
     </div>
 
-    <script src="vendor/pure/js/ui.js"></script>
+    <div class="container" role="main" style="padding: 40px 15px;">
+      <div class="container" style="text-align: center;">
+        <h1>Kevin Ku</h1>
+        <h3>CS Undergrad Studying at Carnegie Mellon University</h3>
+      </div>
 
+      <div id="about_me" class="page-header" style="padding-top: 40px; margin-top: -40px;">
+        <h1>About Me</h1>
+      </div>
+        <p>
+          Hello World!
+        </p>
+
+      <div id="projects" class="page-header" style="padding-top: 40px; margin-top: -40px;">
+        <h1>Projects</h1>
+      </div>
+
+      <div id="get_in_touch" class="page-header" style="padding-top: 40px; margin-top: -40px;">
+        <h1>Get in Touch</h1>
+      </div>
+    </div>
   </body>
 </html>
